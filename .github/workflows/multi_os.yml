@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    commit-ignore:
-      - [skip ci]
 
 jobs:
   main:
