@@ -1,0 +1,15 @@
+name: Multi OS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  main:
+    name: Build
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit_message, 'ci skip')"
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "message not skip ci"
