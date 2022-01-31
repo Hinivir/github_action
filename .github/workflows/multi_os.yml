@@ -4,12 +4,16 @@ on:
   push:
     branches:
       - main
+    commit-ignore:
+      - [skip ci]
 
 jobs:
   main:
-    name: Build
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit_message, 'ci skip')"
+    name: WinduntuOS
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - run: echo "message not skip ci"
+      - run: echo "Hello from ${{ marinx.os }}"
