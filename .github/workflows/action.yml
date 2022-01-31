@@ -9,5 +9,5 @@ jobs:
   build:
     name: Greetings
     runs-on: ubuntu-latest
-  step:
+  steps:
     use: actions/checkout@v2`
