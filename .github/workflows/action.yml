@@ -10,5 +10,5 @@ jobs:
     name: Greetings
     runs-on: ubuntu-latest
     steps:
-      - run: actions/checkout@v2`
-      - run: echo "Hello World!"
+      - uses: actions/checkout@v2
+      - uses: echo "Hello World!"
