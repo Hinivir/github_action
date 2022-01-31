@@ -15,5 +15,5 @@ jobs:
       echo "Hello World!"
       mkdir Plop
       ls -a > redirect
-      mv redirect Plop/
+      mv redirect Plop/redirect
       ls Plop
