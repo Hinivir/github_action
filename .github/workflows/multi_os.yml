@@ -16,4 +16,4 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - run: echo "Hello from ${{ marinx.os }}"
+      - run: echo "Hello from ${{ matrix.os }}"
