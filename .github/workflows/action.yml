@@ -1,0 +1,13 @@
+name: My first action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Greetings
+    runs-on: ubuntu-latest
+  step:
+    use: actions/checkout@v2`
