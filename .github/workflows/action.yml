@@ -9,5 +9,6 @@ jobs:
   build:
     name: Greetings
     runs-on: ubuntu-latest
-  steps:
-    use: actions/checkout@v2`
+    steps:
+      - uses: actions/checkout@v2`
+      - run : echo "Hello World!"
