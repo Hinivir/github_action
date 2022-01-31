@@ -12,5 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-      cd app/python
-      python3 hello.py
+      python3 app/python/hello.py
